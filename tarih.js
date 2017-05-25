@@ -1,0 +1,33 @@
+/*  Footer Bilgi */
+var footer =" &copy; Sadet Sevinç";
+/* Tarih Bilgisi */
+var t = new Date();
+    var ag = t.getDate();
+    var a = t.getMonth();
+    var ay = new Array();
+            ay[0] = "Ocak";
+            ay[1] = "Şubat";
+            ay[2] = "Mart";
+            ay[3] = "Nisan";
+            ay[4] = "Mayıs";
+            ay[5] = "Haziran";
+            ay[6] = "Temmuz";
+            ay[7] = "Ağustos";
+            ay[8] = "Eylül";
+            ay[9] = "Ekim";
+            ay[10] = "Kasım";
+            ay[11] = "Aralık";
+    var a = ay[t.getMonth()];
+    var y = t.getFullYear();
+    var g = t.getDay();
+    var gun = new Array(7);
+             gun[0]=  "Pazar";
+             gun[1] = "Pazart.";
+             gun[2] = "Salı";
+             gun[3] = "Çarş.";
+             gun[4] = "Perş.";
+             gun[5] = "Cuma";
+             gun[6] = "Cumart.";
+    var g = gun[t.getDay()];
+    var trh = ag+" "+a+" "+y+" "+g;
+document.getElementById("foo").innerHTML = trh+footer; 
